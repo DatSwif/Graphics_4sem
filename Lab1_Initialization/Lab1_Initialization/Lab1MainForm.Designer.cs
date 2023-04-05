@@ -32,17 +32,17 @@ namespace Lab1_Initialization
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lab1MainForm));
             this.LabNumberLabel = new System.Windows.Forms.Label();
             this.FramePanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Title = new System.Windows.Forms.Label();
             this.MinimizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.DrawingPanel = new System.Windows.Forms.Panel();
             this.DrawButton = new System.Windows.Forms.Button();
             this.NameRow2 = new System.Windows.Forms.Label();
             this.NameRow1 = new System.Windows.Forms.Label();
-            this.DrawingPanel = new System.Windows.Forms.Panel();
             this.FramePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.MainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,10 +52,9 @@ namespace Lab1_Initialization
             this.LabNumberLabel.BackColor = System.Drawing.Color.Transparent;
             this.LabNumberLabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold);
             this.LabNumberLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.LabNumberLabel.Location = new System.Drawing.Point(76, 45);
-            this.LabNumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabNumberLabel.Location = new System.Drawing.Point(102, 55);
             this.LabNumberLabel.Name = "LabNumberLabel";
-            this.LabNumberLabel.Size = new System.Drawing.Size(300, 32);
+            this.LabNumberLabel.Size = new System.Drawing.Size(400, 39);
             this.LabNumberLabel.TabIndex = 0;
             this.LabNumberLabel.Text = "Лабораторна робота №1";
             this.LabNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,36 +63,35 @@ namespace Lab1_Initialization
             // 
             this.FramePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.FramePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FramePanel.Controls.Add(this.pictureBox1);
+            this.FramePanel.Controls.Add(this.pictureBox);
             this.FramePanel.Controls.Add(this.Title);
             this.FramePanel.Controls.Add(this.MinimizeButton);
             this.FramePanel.Controls.Add(this.CloseButton);
             this.FramePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.FramePanel.Location = new System.Drawing.Point(0, 0);
-            this.FramePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.FramePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FramePanel.Name = "FramePanel";
-            this.FramePanel.Size = new System.Drawing.Size(450, 29);
+            this.FramePanel.Size = new System.Drawing.Size(600, 35);
             this.FramePanel.TabIndex = 1;
             this.FramePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FramePanel_MouseDown);
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 26);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(36, 32);
+            this.pictureBox.TabIndex = 1;
+            this.pictureBox.TabStop = false;
             // 
             // Title
             // 
             this.Title.AutoSize = true;
             this.Title.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Title.Location = new System.Drawing.Point(33, 7);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Title.Location = new System.Drawing.Point(44, 9);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(31, 13);
+            this.Title.Size = new System.Drawing.Size(40, 17);
             this.Title.TabIndex = 3;
             this.Title.Text = "Lab1";
             // 
@@ -103,10 +101,10 @@ namespace Lab1_Initialization
             this.MinimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MinimizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.MinimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("MinimizeButton.Image")));
-            this.MinimizeButton.Location = new System.Drawing.Point(375, -1);
-            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimizeButton.Location = new System.Drawing.Point(500, -1);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(38, 29);
+            this.MinimizeButton.Size = new System.Drawing.Size(51, 36);
             this.MinimizeButton.TabIndex = 2;
             this.MinimizeButton.TabStop = false;
             this.MinimizeButton.UseVisualStyleBackColor = true;
@@ -120,10 +118,10 @@ namespace Lab1_Initialization
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
             this.CloseButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CloseButton.Location = new System.Drawing.Point(412, -1);
-            this.CloseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseButton.Location = new System.Drawing.Point(549, -1);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(38, 29);
+            this.CloseButton.Size = new System.Drawing.Size(51, 36);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.TabStop = false;
             this.CloseButton.UseVisualStyleBackColor = false;
@@ -142,18 +140,28 @@ namespace Lab1_Initialization
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(450, 325);
+            this.MainPanel.Size = new System.Drawing.Size(600, 400);
             this.MainPanel.TabIndex = 2;
+            // 
+            // DrawingPanel
+            // 
+            this.DrawingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.DrawingPanel.Location = new System.Drawing.Point(103, 214);
+            this.DrawingPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrawingPanel.Name = "DrawingPanel";
+            this.DrawingPanel.Size = new System.Drawing.Size(393, 86);
+            this.DrawingPanel.TabIndex = 4;
             // 
             // DrawButton
             // 
             this.DrawButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrawButton.ForeColor = System.Drawing.Color.DarkGray;
-            this.DrawButton.Location = new System.Drawing.Point(11, 284);
+            this.DrawButton.Location = new System.Drawing.Point(15, 350);
+            this.DrawButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DrawButton.Name = "DrawButton";
-            this.DrawButton.Size = new System.Drawing.Size(141, 28);
+            this.DrawButton.Size = new System.Drawing.Size(188, 34);
             this.DrawButton.TabIndex = 3;
             this.DrawButton.Text = "Намалювати прізвище";
             this.DrawButton.UseVisualStyleBackColor = true;
@@ -164,9 +172,10 @@ namespace Lab1_Initialization
             this.NameRow2.AutoSize = true;
             this.NameRow2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameRow2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.NameRow2.Location = new System.Drawing.Point(75, 120);
+            this.NameRow2.Location = new System.Drawing.Point(100, 148);
+            this.NameRow2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameRow2.Name = "NameRow2";
-            this.NameRow2.Size = new System.Drawing.Size(300, 28);
+            this.NameRow2.Size = new System.Drawing.Size(374, 34);
             this.NameRow2.TabIndex = 2;
             this.NameRow2.Text = "Тарасюк Євгеній Сергійович";
             // 
@@ -175,35 +184,28 @@ namespace Lab1_Initialization
             this.NameRow1.AutoSize = true;
             this.NameRow1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameRow1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.NameRow1.Location = new System.Drawing.Point(127, 101);
+            this.NameRow1.Location = new System.Drawing.Point(169, 124);
+            this.NameRow1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameRow1.Name = "NameRow1";
-            this.NameRow1.Size = new System.Drawing.Size(196, 19);
+            this.NameRow1.Size = new System.Drawing.Size(256, 23);
             this.NameRow1.TabIndex = 1;
             this.NameRow1.Text = "Виконав студент групи ІП-12";
             // 
-            // DrawingPanel
-            // 
-            this.DrawingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.DrawingPanel.Location = new System.Drawing.Point(77, 174);
-            this.DrawingPanel.Name = "DrawingPanel";
-            this.DrawingPanel.Size = new System.Drawing.Size(295, 70);
-            this.DrawingPanel.TabIndex = 4;
-            // 
             // Lab1MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 325);
+            this.ClientSize = new System.Drawing.Size(600, 400);
             this.Controls.Add(this.FramePanel);
             this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Lab1MainForm";
             this.Text = "Lab1MainForm";
             this.FramePanel.ResumeLayout(false);
             this.FramePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -217,7 +219,7 @@ namespace Lab1_Initialization
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button MinimizeButton;
         private System.Windows.Forms.Button CloseButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label NameRow1;
         private System.Windows.Forms.Label NameRow2;
